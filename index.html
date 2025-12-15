@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konith Thapa | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <!-- Navbar -->
     <nav>
         <div class="container">
@@ -23,15 +34,15 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="container hero-container">
+        <div class="container hero-container" data-aos="fade-up">
             <h2>Hello, I'm <span>Konith Thapa</span></h2>
-            <p>AI/ML & Data Science Enthusiast building intelligent solutions with Python and Machine Learning.</p>
+            <p>I am <span id="typed"></span></p>
             <a href="#projects" class="btn">View Projects</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" data-aos="fade-right">
         <div class="container">
             <h2>About Me</h2>
             <p>I am a passionate AI/ML enthusiast with experience in Python, Data Analysis, and Machine Learning projects. I enjoy building practical AI solutions and continuously learning new technologies.</p>
@@ -39,42 +50,48 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" data-aos="fade-left">
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>Programming</h3>
-                    <p>Python, SQL, C#</p>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%"></div>
+                    </div>
                 </div>
                 <div class="skill-card">
-                    <h3>AI/ML</h3>
-                    <p>TensorFlow, PyTorch, Scikit-learn</p>
+                    <h3>Machine Learning</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%"></div>
+                    </div>
                 </div>
                 <div class="skill-card">
-                    <h3>Tools</h3>
-                    <p>Git, VS Code, Excel</p>
+                    <h3>Data Analysis</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
         <div class="container">
             <h2>Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-aos="zoom-in">
                     <h3>Traffic Violation Detection</h3>
                     <p>Desktop system detecting traffic violations using Python, YOLOv5, and OpenCV.</p>
                     <a href="https://github.com/KONITH666/TrafficViolation" target="_blank" class="btn-small">GitHub</a>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
                     <h3>Weather Forecast App</h3>
-                    <p>Simple Python-based app fetching weather data and visualizing it.</p>
+                    <p>Python app fetching weather data and visualizing it.</p>
                     <a href="https://github.com/KONITH666/WeatherForecast" target="_blank" class="btn-small">GitHub</a>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
                     <h3>Chatbot</h3>
                     <p>Python chatbot using NLP for simple conversation handling.</p>
                     <a href="https://github.com/KONITH666/Chatbot" target="_blank" class="btn-small">GitHub</a>
@@ -84,20 +101,20 @@
     </section>
 
     <!-- Resume Section -->
-    <section id="resume">
+    <section id="resume" data-aos="fade-right">
         <div class="container">
             <h2>Resume</h2>
-            <a href="Konith_Thapa_Resume.pdf" class="btn" download>Download Resume</a>
+            <a href="Konith Thapa Resume.docx" class="btn" download>Download Resume</a>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-left">
         <div class="container">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:kooneththapa@gmail.com">kooneththapa@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/koniththapa" target="_blank">linkedin.com/in/koniththapa</a></p>
-            <p>GitHub: <a href="https://github.com/KONITH666" target="_blank">github.com/KONITH666</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:kooneththapa@gmail.com">kooneththapa@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/koniththapa" target="_blank">linkedin.com/in/koniththapa</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/KONITH666" target="_blank">github.com/KONITH666</a></p>
         </div>
     </section>
 
@@ -105,5 +122,10 @@
     <footer>
         <p>© 2025 Konith Thapa. All rights reserved.</p>
     </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
 </body>
 </html>
