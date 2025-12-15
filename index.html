@@ -3,129 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konith Thapa | Portfolio</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    <title>Konith Thapa | AI/ML Developer</title>
+    <meta name="description" content="Portfolio of Konith Thapa - AI/ML Enthusiast, Python Developer, and Data Science Learner">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- AOS Library -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
-
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <!-- Animated Background -->
+    <div class="bg-animation"></div>
+    
     <!-- Navbar -->
-    <nav>
-        <div class="container">
-            <h1 class="logo">Konith Thapa</h1>
-            <ul class="nav-links">
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Konith Thapa</div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="container hero-container" data-aos="fade-up">
-            <h2>Hello, I'm <span>Konith Thapa</span></h2>
-            <p>I am <span id="typed"></span></p>
-            <a href="#projects" class="btn">View Projects</a>
+        <div class="hero-content">
+            <h1>Hello, I'm Konith Thapa</h1>
+            <p class="tagline">I'm a <span id="typed"></span></p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" data-aos="fade-right">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a passionate AI/ML enthusiast with experience in Python, Data Analysis, and Machine Learning projects. I enjoy building practical AI solutions and continuously learning new technologies.</p>
-        </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate AI/ML enthusiast with expertise in Python, Data Analysis, and Machine Learning. I thrive on building practical AI solutions that solve real-world problems and continuously push the boundaries of what's possible with technology.</p>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" data-aos="fade-left">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Python</h3>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 90%"></div>
-                    </div>
+    <section id="skills">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Python Development</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="90"></div>
                 </div>
-                <div class="skill-card">
-                    <h3>Machine Learning</h3>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 80%"></div>
-                    </div>
+            </div>
+            <div class="skill-card">
+                <h3>Machine Learning</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="80"></div>
                 </div>
-                <div class="skill-card">
-                    <h3>Data Analysis</h3>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 85%"></div>
-                    </div>
+            </div>
+            <div class="skill-card">
+                <h3>Data Analysis</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-width="85"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" data-aos="fade-up">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card" data-aos="zoom-in">
-                    <h3>Traffic Violation Detection</h3>
-                    <p>Desktop system detecting traffic violations using Python, YOLOv5, and OpenCV.</p>
-                    <a href="https://github.com/KONITH666/TrafficViolation" target="_blank" class="btn-small">GitHub</a>
-                </div>
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-                    <h3>Weather Forecast App</h3>
-                    <p>Python app fetching weather data and visualizing it.</p>
-                    <a href="https://github.com/KONITH666/WeatherForecast" target="_blank" class="btn-small">GitHub</a>
-                </div>
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-                    <h3>Chatbot</h3>
-                    <p>Python chatbot using NLP for simple conversation handling.</p>
-                    <a href="https://github.com/KONITH666/Chatbot" target="_blank" class="btn-small">GitHub</a>
-                </div>
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Traffic Violation Detection</h3>
+                <p>Intelligent desktop system leveraging YOLOv5 and OpenCV to detect and classify traffic violations in real-time with high accuracy.</p>
+                <a href="https://github.com/KONITH666/TrafficViolation" target="_blank" class="project-link">
+                    View on GitHub →
+                </a>
+            </div>
+            <div class="project-card">
+                <h3>Weather Forecast App</h3>
+                <p>Dynamic Python application that fetches real-time weather data and creates beautiful data visualizations for comprehensive weather analysis.</p>
+                <a href="https://github.com/KONITH666/WeatherForecast" target="_blank" class="project-link">
+                    View on GitHub →
+                </a>
+            </div>
+            <div class="project-card">
+                <h3>NLP Chatbot</h3>
+                <p>Intelligent conversational AI built with Python and Natural Language Processing to handle contextual conversations with human-like responses.</p>
+                <a href="https://github.com/KONITH666/Chatbot" target="_blank" class="project-link">
+                    View on GitHub →
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" data-aos="fade-right">
-        <div class="container">
-            <h2>Resume</h2>
-            <a href="Konith Thapa Resume.docx" class="btn" download>Download Resume</a>
-        </div>
-    </section>
-
     <!-- Contact Section -->
-    <section id="contact" data-aos="fade-left">
-        <div class="container">
-            <h2>Contact</h2>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:kooneththapa@gmail.com">kooneththapa@gmail.com</a></p>
-            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/koniththapa" target="_blank">linkedin.com/in/koniththapa</a></p>
-            <p><i class="fab fa-github"></i> <a href="https://github.com/KONITH666" target="_blank">github.com/KONITH666</a></p>
+    <section id="contact">
+        <h2>Let's Connect</h2>
+        <div class="contact-links">
+            <div class="contact-item">
+                <span>📧</span>
+                <a href="mailto:kooneththapa@gmail.com">kooneththapa@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <span>💼</span>
+                <a href="https://www.linkedin.com/in/koniththapa" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-item">
+                <span>👨‍💻</span>
+                <a href="https://github.com/KONITH666" target="_blank">GitHub</a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Konith Thapa. All rights reserved.</p>
+        <p>© 2025 Konith Thapa. Crafted with passion.</p>
     </footer>
 
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
